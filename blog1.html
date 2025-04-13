@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          line-height: 1.6;
+          margin: 20px;
+          padding: 0;
+          background-color: #f9f9f9;
+          color: #333;
+        }
+        h1, h2, h3 {
+          color: #1e90ff;
+        }
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          margin: 20px 0;
+        }
+        table, th, td {
+          border: 1px solid #aaa;
+        }
+        th, td {
+          padding: 10px;
+          text-align: left;
+        }
+        .section {
+          margin-bottom: 40px;
+        }
+        ul li {
+            list-style: circle;
+        }
+        img {
+            max-width: 80%;
+        }
+      </style>
+</head>
+<body>
+    <section>
+        <h1>Things for a coder to increase productivity and scalability</h1>
+        <h2>Extensions:</h2>
+
+        <ol style="list-style: none;">
+            <li><h2>1.Code Runner:</h2> <p>The Code Runner extension in VS Code is a lightweight and convenient tool that allows you to quickly execute code in multiple languages without manually opening terminals or configuring environments.</p>
+                <center><img src="./assets/img1.png" alt="img1"></center>
+                <h3>Key Features:</h3>
+                <ol>
+                    <li><b>Run Code Instantly –</b> Press Ctrl + Alt + N (or Cmd + Option + N on macOS) to execute the current file.</li>
+                    <li><b>Supports Multiple Languages –</b> Works with Python, JavaScript, C++, Java, PHP, Go, and many more.</li>
+                    <li><b>Customizable Execution –</b> You can modify the execution settings (like running commands, environment variables, etc.).</li>
+                    <li><b>Output in the Output Panel –</b> Instead of running in the terminal, it displays the output in the "OUTPUT" panel by default.</li>
+                    <li><b>Execute Selection –</b> Highlight specific lines and run only the selected part.</li>
+                    <li><b>Auto Save Before Run –</b> Can automatically save files before execution.</li>
+                </ol>
+                <h3>How to Use:</h3>
+                <ol>
+                    <li>Install Code Runner from the VS Code Extensions Marketplace.</li>
+                    <li>Open any script (e.g., script.py for Python).</li>
+                    <li>Run using:
+                        <ul>
+                            <li>Ctrl + Alt + N (Windows/Linux) or Cmd + Option + N (Mac).</li>
+                            <li>Right-click → Run Code.</li>
+                            <li>Click the Play button in the top right corner.</li>
+                        </ul>
+                    </li>
+                    <li>View the output in the OUTPUT tab.
+                        <h3>Best Use Cases:</h3>
+                        <ul>
+                            <li>Quickly testing small code snippets.</li>
+                            <li>Running scripts without setting up debugging.</li>
+                            <li>Learning new programming languages fast.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </li>
+            <li><h2>2. Tabine:</h2>
+                <p>Tabnine is an AI-powered code completion extension for VS Code that enhances developer productivity by providing intelligent code suggestions. </p>
+                <center><img src="./assets/img2.png" alt="img2"></center>
+                <h3> Key Features of Tabnine in VS Code</h3>
+                <ol>
+                    <li><b>AI-Based Code Completion –</b> Provides context-aware suggestions, completing functions, variables, and even entire lines of code.</li>
+                    <li><b>Whole-Line & Full-Function Completion –</b> Can predict entire lines or complete function implementations.</li>
+                    <li><b>Supports Multiple Languages –</b> Works with JavaScript, TypeScript, Python, Java, C++, and many other languages.</li>
+                    <li><b>Private Code Training –</b> Can learn from your specific codebase to provide better suggestions while maintaining privacy.</li>
+                    <li><b>Works Offline –</b> Unlike some AI tools, Tabnine can run locally without sending data to external servers.</li>
+                    <li><b>Integrates with GitHub Copilot –</b> Can work alongside Copilot for enhanced code completion.</li>
+                </ol>
+                <center><img src="./assets/img3.png" alt="img3"></center>
+                <h3>Installation & Setup in VS Code</h3>
+                <ol>
+                    <li>Open VS Code.</li>
+                    <li>Go to Extensions (Ctrl + Shift + X).</li>
+                    <li>Search for Tabnine and click Install.</li>
+                    <li>Once installed, restart VS Code.</li>
+                    <li>You can configure Tabnine settings by opening the Command Palette (Ctrl + Shift + P) and searching for Tabnine: Open Settings.</li>
+                </ol>
+                <h3>Customization</h3>
+                <ol>
+                    <li>You can adjust the AI model’s performance level.</li>
+                    <li>Enable/disable local vs. cloud-based AI models.</li>
+                    <li>Set up enterprise or team-based AI models for collaborative coding.</li>
+                </ol>
+                <center><img src="./assets/img4.png" alt="img4"></center>
+                <h3>Comparison with GitHub Copilot:</h3>
+                <table>
+                    <thead>
+                        <th>Feature</th>
+                        <th>Tabnine </th>
+                        <th>GitHub Copilot </th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>AI Model</th>
+                            <td>Custom AI trained on your code (Pro version runs locally)</td>
+                            <td>OpenAI Codex (trained on public GitHub repos)</td>
+                        </tr>
+                        <tr>
+                            <th>Code Completion</th>
+                            <td>Short & full-line completions (Pro version predicts entire functions)</td>
+                            <td>Full-line & entire function completions</td>
+                        </tr>
+                        <tr>
+                            <th>Privacy</th>
+                            <td>Local AI model (Pro) – doesn’t send code online</td>
+                            <td>Sends code to OpenAI servers for processing</td>
+                        </tr>
+                        <tr>
+                            <th>Language Support</th>
+                            <td>Supports most programming languages</td>
+                            <td>Best for JavaScript, Python, TypeScript, Go, Ruby, C++</td>
+                        </tr>
+                        <tr>
+                            <th>Performance</th>
+                            <td>Fast & lightweight, minimal CPU usage</td>
+                            <td>More powerful but can be resource-intensive</td>
+                        </tr>
+                        <tr>
+                            <th>Context Awareness</th>
+                            <td>Learns from your project, integrates with your codebase</td>
+                            <td>More intelligent, understands complex logic better</td>
+                        </tr>
+                        <tr>
+                            <th>Works Offline?</th>
+                            <td>Yes (Pro version)</td>
+                            <td>No (requires an internet connection)</td>
+                        </tr>
+                        <tr>
+                            <th>Integration</th>
+                            <td>Works with VS Code, IntelliJ, WebStorm, PyCharm, etc.</td>
+                            <td>Mostly optimized for VS Code</td>
+                        </tr>
+                        <tr>
+                            <th>Pricing</th>
+                            <td>Free (Basic) / $12 per month (Pro)</td>
+                            <td>$10 per month (Personal) / $19 per user (Business)</td>
+                        </tr>
+                        <tr>
+                            <th>Best For</th>
+                            <td>Developers needing privacy & lightweight AI completion</td>
+                            <td>Developers who want powerful AI-driven coding suggestions</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Is Tabnine Worth Using?</h3>
+                <ul>
+                    <li>Best for developers who need privacy-conscious AI assistance.</li>
+                    <li>Good for teams that want a customizable AI assistant.</li>
+                    <li>Not as aggressive as GitHub Copilot but still useful for boosting coding efficiency.</li>
+                </ul>
+            </li>
+            <li>
+                <h2>3. Next JS/TS Snippets:</h2>
+                <p>The Next.js/TS snippets extension provides useful code shortcuts to boost productivity while working with Next.js and TypeScript in VS Code.</p>
+                <center><img src="./assets/img5.png" alt="img5"></center>
+                <h3>Installation</h3>
+                <ol>
+                    <li>Open VS Code.</li>
+                    <li>Go to Extensions (Ctrl + Shift + X).</li>
+                    <li>Search for "Next.js snippets" or "ES7+ React/Redux/React-Native snippets".</li>
+                    <li>Click Install.</li>
+                    <li>Restart VS Code.</li>
+                </ol>
+                <table>
+                    <thead>
+                        <th>Snippet</th>
+                        <th>Expands to...</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>nextpage</td>
+                            <td>Next.js page with TypeScript (export default function Page() {})</td>
+                        </tr>
+                        <tr>
+                            <td>ncomp</td>
+                            <td>Functional component with TypeScript (FC<>)</td>
+                        </tr>
+                        <tr>
+                            <td>useState</td>
+                            <td>const [state, setState] = useState<Type>()</td>
+                        </tr>
+                        <tr>
+                            <td>useEffect</td>
+                            <td>useEffect(() => {}, []);</td>
+                        </tr>
+                        <tr>
+                            <td>useRouter</td>
+                            <td>const router = useRouter();</td>
+                        </tr>
+                        <tr>
+                            <td>nextlink</td>
+                            <td> Link href="/about" </td>
+                        </tr>
+                        <tr>
+                            <td>nexthead</td>
+                            <td> Head>title>Page Title /title> /Head> </td>
+                        </tr>
+                        <tr>
+                            <td>nextimage</td>
+                            <td>image src="/image.png" width={100} height={100} </td>
+                        </tr>
+                        <tr>
+                            <td>getServerSideProps</td>
+                            <td>Next.js SSR function (getServerSideProps)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <h2>4. ES7+ React/Redux/React-Native snippets</h2>
+                <p>The ES7+ React/Redux/React-Native snippets extension is a powerful tool for quickly generating boilerplate code for React, Redux, and React Native development.</p>
+                <h3>Installation</h3>
+                <ol>
+                    <li>Open VS Code.</li>
+                    <li>Go to Extensions Marketplace (Ctrl + Shift + X).</li>
+                    <li>Search for ES7+ React/Redux/React-Native snippets.</li>
+                    <li>Click Install.</li>
+                    <li>Restart VS Code.</li>
+                    <li>React Component Snippets</li>
+                </ol>
+                <table>
+                    <thead>
+                        <th>Shortcut</th>
+                        <th>Expands to...</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>rafce</td>
+                            <td>Functional component (arrow function) with export</td>
+                        </tr>
+                        <tr>
+                            <td>rfc</td>
+                            <td>Functional component</td>
+                        </tr>
+                        <tr>
+                            <td>rcc</td>
+                            <td>Class component</td>
+                        </tr>
+                        <tr>
+                            <td>rsc</td>
+                            <td>Functional component with default export</td>
+                        </tr>
+                        <tr>
+                            <td>rfce</td>
+                            <td>Functional component with named export</td>
+                        </tr>
+                        <tr>
+                            <td>rpc</td>
+                            <td>Pure component</td>
+                        </tr>
+                        <tr>
+                            <td>rpt</td>
+                            <td>PropTypes snippet</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>React Hooks Snippets</h3>
+                <table>
+                    <thead>
+                        <th>Shortcut</th>
+                        <th>Expands to...</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>usf</td>
+                            <td>useState Hook</td>
+                        </tr>
+                        <tr>
+                            <td>uef</td>
+                            <td>useEffect Hook</td>
+                        </tr>
+                        <tr>
+                            <td>uce</td>
+                            <td>useContext Hook</td>
+                        </tr>
+                        <tr>
+                            <td>usm</td>
+                            <td>useMemo Hook</td>
+                        </tr>
+                        <tr>
+                            <td>uscb</td>
+                            <td>useCallback Hook</td>
+                        </tr>
+                        <tr>
+                            <td>usl</td>
+                            <td>useLayoutEffect Hook</td>
+                        </tr>
+                        <tr>
+                            <td>usr</td>
+                            <td>useRef Hook</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>React Router Snippets</h3>
+                <table>
+                    <thead>
+                        <th>Shortcut</th>
+                        <th>Expands to...</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>rdom</td>
+                            <td>React Router BrowserRouter setup</td>
+                        </tr>
+                        <tr>
+                            <td>rrd</td>
+                            <td>React Router < Route ></td>
+                        </tr>
+                        <tr>
+                            <td>rrc</td>
+                            <td>React Router < Redirect ></td>
+                        </tr>
+                        <tr>
+                            <td>rnrf</td>
+                            <td>React Native Router < Router ></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Redux & Redux Toolkit Snippets</h3>
+                <table>
+                    <thead>
+                        <th>Shortcut</th>
+                        <th>Expands to...</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>rxslice</td>
+                            <td>Creates a Redux slice (Redux Toolkit)</td>
+                        </tr>
+                        <tr>
+                            <td>rxaction</td>
+                            <td>Redux action</td>
+                        </tr>
+                        <tr>
+                            <td>rxreducer</td>
+                            <td>Redux reducer</td>
+                        </tr>
+                        <tr>
+                            <td>rxmapstate</td>
+                            <td>mapStateToProps</td>
+                        </tr>
+                        <tr>
+                            <td>rxmapdispatch</td>
+                            <td>mapDispatchToProps</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>React Native Snippets</h3>
+                <table>
+                    <thead>
+                        <th>Shortcut</th>
+                        <th>Expands to...</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>rnstyle</td>
+                            <td>React Native StyleSheet</td>
+                        </tr>
+                        <tr>
+                            <td>rns</td>
+                            <td>React Native Component</td>
+                        </tr>
+                        <tr>
+                            <td>rnflatlist</td>
+                            <td>React Native FlatList</td>
+                        </tr>
+                        <tr>
+                            <td>rntouch</td>
+                            <td>React Native TouchableOpacity</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <h2>5. GitHub Copilot</h2>
+                <p>GitHub Copilot is an AI-powered coding assistant that helps you write code faster by suggesting entire functions, lines, and even comments based on context. It is powered by OpenAI Codex and integrates seamlessly into VS Code.</p>
+                <center><img src="./assets/img6.png" alt="img6"></center>
+                <h3>
+                    How to Install GitHub Copilot in VS Code
+                </h3>
+                <ol>
+                    <li>Open VS Code.</li>
+                    <li>Go to Extensions Marketplace (Ctrl + Shift + X).</li>
+                    <li>Search for GitHub Copilot and click Install.</li>
+                    <li>Sign in to GitHub when prompted.</li>
+                    <li>Enable Copilot in your VS Code settings (File > Preferences > Settings).</li>
+                </ol>
+                <center><img src="./assets/img7.png" alt="img7"></center>
+                <h3>
+                    Key Features of GitHub Copilot:
+                </h3>
+                <ol>
+                    <li><b>Autocomplete Code Suggestions –</b> Predicts entire lines and functions.</li>
+                    <li><b>Comment-Based Code Generation –</b> Write a comment, and Copilot generates the code.</li>
+                    <li><b>Supports Multiple Languages –</b> Works with JavaScript, TypeScript, Python, Go, Java, C++, etc.</li>
+                    <li><b>Code Explanation & Refactoring –</b> Helps understand existing code and suggest improvements.</li>
+                    <li><b>Context-Aware AI –</b> Learns from your coding patterns and project structure.</li>
+                </ol>
+            </li>
+            <li>
+                <h2>6. Error Lens</h2>
+                <p>Error Lens is a powerful VS Code extension that enhances error and warning visibility by highlighting issues directly in the editor instead of just showing them in the Problems panel.</p>
+                <center><img src="./assets/img8.png" alt="img8"></center>
+                <h3>Key Features of Error Lens:</h3>
+                <ol>
+                    <li><b>Inline Error/Warning Messages –</b> Shows errors/warnings next to the code instead of at the bottom.</li>
+                    <li><b>Customizable Styling –</b> Adjust colors, opacity, and font styles.</li>
+                    <li><b>Highlights Unused Variables –</b> Helps detect unused imports, variables, or functions.</li>
+                    <li><b>Works with ESLint, TypeScript, Python, etc. –</b> Supports multiple languages and linters.</li>
+                    <li><b>Quick Fix Suggestions –</b> Hover over errors for fixes.</li>
+                </ol>
+                <h3>How to Install Error Lens in VS Code</h3>
+                <ol>
+                    <li>Open VS Code.</li>
+                    <li>Go to Extensions Marketplace (Ctrl + Shift + X).</li>
+                    <li>Search for "Error Lens".</li>
+                    <li>Click Install.</li>
+                    <li>Restart VS Code (optional but recommended).</li>
+                </ol>
+                <h3>How to Use Error Lens</h3>
+                <ol>
+                    <li>After installation, errors and warnings will be displayed inline with your code.</li>
+                    <li>Hover over an error to see a detailed message and quick fix.</li>
+                    <li>Use "Quick Fix" (Ctrl + .) to apply suggested fixes automatically.</li>
+                </ol>
+            </li>
+            <li>
+                <h2>7. Auto Rename Tag</h2>
+                <p>The Auto Rename Tag extension in VS Code automatically renames the closing HTML/JSX/XML tag when you rename the opening tag, and vice versa.</p>
+                <center><img src="./assets/img9.png" alt="img9"></center>
+                <h3>Key Features:</h3>
+                <ol>
+                    <li>Auto-renames paired tags in HTML, JSX, XML, and Vue files.</li>
+                    <li><b>Works with multiple cursors –</b> Rename multiple tags at once.</li>
+                    <li><b>Lightweight and fast –</b> No performance lag.</li>
+                    <li><b>Works in JSX (React/Next.js) –</b> Automatically renames <div> → </div> inside JSX components.</li>
+                    <li><b>Compatible with Emmet & Prettier –</b> No conflicts with other extensions.</li>
+                </ol>
+                <h3>How to Install Auto Rename Tag in VS Code</h3>
+                <ol>
+                    <li>Open VS Code.</li>
+                    <li>Go to Extensions Marketplace (Ctrl + Shift + X).</li>
+                    <li>Search for "Auto Rename Tag" (by Jun Han).</li>
+                    <li>Click Install.</li>
+                    <li>Restart VS Code (optional).</li>
+                </ol>
+            </li>
+            <li>
+                <h2>8. Jest:</h2>
+                <p>Jest is a JavaScript testing framework designed for simplicity, performance, and support for projects using React, Node.js, TypeScript, and more. It is widely used for unit and integration testing.</p>
+                <center><img src="./assets/img10.png" alt="img10"></center>
+                <h3>Key Features of Jest</h3>
+                <ol>
+                    <li><b>Zero Configuration –</b> Works out of the box with minimal setup.</li>
+                    <li><b>Fast & Parallel Execution –</b> Runs tests in parallel to speed up performance.</li>
+                    <li><b>Built-in Coverage Reports –</b> Generates test coverage reports without extra setup.</li>
+                    <li><b>Snapshot Testing –</b> Captures UI component snapshots for regression testing.</li>
+                    <li><b>Mocks & Spies –</b> Easily mock functions, modules, and APIs.</li>
+                    <li>Works with React, Next.js, TypeScript, Babel, and Node.js.</li>
+                    <center><img src="./assets/img11.png" alt="img11"></center>
+                    <center><img src="./assets/img12.png" alt="img12"></center>
+                    <h3>How to Install Jest</h3>
+                    <p><b>For JavaScript Projects (Node.js, React, Vue, etc.)</b></p>
+                    <p>Run the following command:</p>
+                    <p><b>npm install --save-dev jest</b></p>
+                    <p>Or, for Yarn:</p>
+                    <p><b>yarn add --dev jest</b></p>
+                    <p><b>For TypeScript Projects</b></p>
+                    <p>Install Jest along with TypeScript support:</p>
+                    <p><b>npm install --save-dev jest ts-jest @types/jest</b></p>
+                </ol>
+            </li>
+            <li>
+                <h2>9. GitLens — Git supercharged</h2>
+                <p>GitLens is a powerful Git extension for VS Code that enhances Git capabilities, making it easier to understand, navigate, and optimize code changes.</p>
+                <center><img src="./assets/img13.png" alt="img13"></center>
+                <h3>Key Features of GitLens</h3>
+                <ol>
+                    <li><b>Git Blame –</b> See who last modified a line and when.</li>
+                    <li><b>Inline Annotations –</b> View commit history directly in the editor.</li>
+                    <li><b>Rich History View –</b> Explore commit history, diffs, and file changes.</li>
+                    <li><b>Powerful Commit Search –</b> Search commit messages, authors, and files.</li>
+                    <li><b>Code Lens & Heatmaps –</b> Highlight recent and frequent changes.</li>
+                    <li>Seamless Integration with GitHub, GitLab & Bitbucket.</li>
+                </ol>
+                <center><img src="./assets/img14.png" alt="img14"></center>
+                <h3> How to Install GitLens in VS Code</h3>
+                <ol>
+                    <li>Open VS Code.</li>
+                    <li>Go to Extensions Marketplace (Ctrl + Shift + X).</li>
+                    <li>Search for "GitLens" (by GitKraken).</li>
+                    <li>Click Install.</li>
+                    <li>Restart VS Code (optional but recommended).</li>
+                </ol>
+                <h3>How to Use GitLens in VS Code</h3>
+                <ol>
+                    <li>
+                        <p><b>View Git Blame (Who Changed This Line?)</b></p>
+                        <p>Hover over any line of code to see:</p>
+                            <ul>
+                                <li>The author of the last change.</li>
+                                <li>The commit message.</li>
+                                <li>The timestamp.</li>
+                            </ul>
+                            <p> Shortcut: Ctrl + Shift + G B (Windows/Linux) or Cmd + Shift + G B (Mac).</p>
+                    </li>
+                    <li><p><b>View Commit History of a File</b></p>
+                        <ol>
+                            <li>Right-click on a file in Explorer.</li>
+                            <li>Select "Open File History".</li>
+                            <li>View the list of commits affecting that file.</li>
+                        </ol>
+                        <p> Shortcut: Alt + Shift + H (Windows/Linux) or Option + Shift + H (Mac).</p>
+                    </li>
+                    <li>
+                        <p><b>View Line & File History</b></p>
+                        <ol>
+                            <li>Line History: GitLens: Show Line History (Ctrl + Shift + P, search for this command).</li>
+                            <li>File History: GitLens: Show File History in the Command Palette.</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p><b>Explore Repo History & Branches</b></p>
+                        <ol>
+                            <li>Click on the GitLens View (left sidebar).</li>
+                            <li>See all branches, commits, and stashes in one place.</li>
+                            <li>Compare branches, files, and commits directly inside VS Code.</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p><b>Git Diffs & Code Lens</b></p>
+                        <ol>
+                            <li>View inline diffs between file versions.</li>
+                            <li>Click "Compare with Previous" to see what changed.</li>
+                            <li>Enable CodeLens for insights on code frequency.</li>
+                            <p> Shortcut: Ctrl + Shift + P → Search "GitLens: Toggle File Blame".</p>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <h2>10. Git History</h2>
+                <p>Git History is a VS Code extension that provides an easy way to view commit history, diffs, branches, and contributors directly within the editor.</p>
+                <center><img src="./assets/img15.png" alt="img15"></center>
+                <h3>Key Features of Git History</h3>
+                <ol>
+                    <li>View commit history of a file or entire repository.</li>
+                    <li>Compare commits and branches visually.</li>
+                    <li>Search commit messages, authors, and file changes.</li>
+                    <li>View detailed commit diffs within VS Code.</li>
+                    <li>Navigate through previous versions of a file.</li>
+                    <li><b>Blame feature –</b> See who last modified a line.</li>
+                </ol>
+                <center><img src="./assets/img16.png" alt="img16"></center>
+                <h3>
+                    How to Install Git History in VS Code
+                </h3>
+                <ol>
+                    <li>Open VS Code.</li>
+                    <li>Go to Extensions Marketplace (Ctrl + Shift + X).</li>
+                    <li>Search for "Git History" (by Don Jayamanne).</li>
+                    <li>Click Install.</li>
+                    <li>Restart VS Code (optional but recommended).</li>
+                </ol>
+                <h3>How to Use Git History in VS Code</h3>
+                <ol>
+                    <li>
+                        <p><b>View the Commit History of a Repository</b></p>
+                        <ol>
+                            <li>Open the Command Palette (Ctrl + Shift + P / Cmd + Shift + P on Mac).</li>
+                            <li>Search for "Git: View History (git log)".</li>
+                            <li>A new tab opens, displaying the commit history of the repository.</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p><b>View the Commit History of a File</b></p>
+                        <ol>
+                            <li>Right-click on a file in Explorer.</li>
+                            <li>Select "Git: View File History".</li>
+                            <li>View all commits that modified this file.</li>
+                        </ol>
+                        <p> Shortcut: Alt + Shift + H (Windows/Linux) or Option + Shift + H (Mac).</p>
+                    </li>
+                    <li>
+                        <p><b>Compare Commits</b></p>
+                        <ol>
+                            <li>Open the commit history.</li>
+                            <li>Click on any two commits.</li>
+                            <li>View the side-by-side diff inside VS Code.</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p><b>View File Blame (Who Changed This Line?)</b></p>
+                        <ol>
+                            <li>Open a file and right-click on any line.</li>
+                            <li>Select "Git: View Line History".</li>
+                            <li>It will show the commit that last modified that line.</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p><b>Search for a Specific Commit</b></p>
+                        <ol>
+                            <li>Open the Git History view.</li>
+                            <li>Use the search bar to filter commits by author, message, or file name.</li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <h2>11. Git Graph</h2>
+                <p>Git Graph is a visual Git tool for VS Code that provides a graphical representation of branches, commits, and merges in your repository. It simplifies commit history tracking and makes branching workflows more intuitive.</p>
+                <center><img src="./assets/img17.png" alt="img17"></center>
+                <h3>Key Features of Git Graph</h3>
+                <ol>
+                    <li><b>Visual Graph View –</b> See all branches, commits, and merges in an interactive graph.</li>
+                    <li><b>Real-Time Updates –</b> Changes appear instantly when new commits are made.</li>
+                    <li><b>Compare Commits & Branches –</b> View differences side-by-side.</li>
+                    <li><b>Checkout & Create Branches –</b> Easily switch between branches or create new ones.</li>
+                    <li><b>Inline Commit Details –</b> See author, date, and message for each commit.</li>
+                    <li><b>Stash, Cherry-Pick, Revert, and Reset Commits –</b> Perform advanced Git operations.</li>
+                    <li><b>Works with Local & Remote Repositories –</b> Push, pull, and fetch with a single click.</li>
+                </ol>
+                <center><img src="./assets/img18.png" alt="img18"></center>
+                <p><b> How to Install Git Graph in VS Code</b></p>
+                <ol>
+                    <li>Open VS Code.</li>
+                    <li>Go to Extensions Marketplace (Ctrl + Shift + X).</li>
+                    <li>Search for "Git Graph" (by mhutchie).</li>
+                    <li>Click Install.</li>
+                    <li>Restart VS Code (optional but recommended).</li>
+                </ol>
+                <h3>How to Use Git Graph in VS Code</h3>
+                <ol>
+                    <li>
+                        <p><b>Open Git Graph</b></p>
+                        <ol>
+                            <li>Open the Command Palette (Ctrl + Shift + P / Cmd + Shift + P on Mac).</li>
+                            <li>Search for "Git Graph: View Git Graph".</li>
+                            <li>A new panel opens, displaying the interactive commit graph.</li>
+                        </ol>
+                        <p>Or, click on the Git Graph icon in the Activity Bar (left sidebar).</p>
+                    </li>
+                    <li><p><b>Explore Commit History in Graph View</b></p></li>
+                    <ol>
+                        <li>View all commits, branches, and merges in a visual format.</li>
+                        <li>Click on any commit to see details, diffs, and changes.</li>
+                        <li>Hover over commits to see commit messages, authors, and timestamps.</li>
+                    </ol>
+                    <li>
+                        <p><b>Checkout or Create Branches</b></p>
+                        <ol>
+                            <li>Right-click on any branch in the graph.</li>
+                            <li>Choose "Checkout Branch" to switch to it.</li>
+                            <li>Or, select "Create Branch" to start a new branch from that point.</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p><b>Compare Branches & Commits</b></p>
+                        <ol>
+                            <li>Select two commits to see the diff between them.</li>
+                            <li>Use "Compare Commits" to track file changes over time.</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p><b>Push, Pull, Fetch & Merge</b></p>
+                        <ol>
+                            <li>Right-click on a branch to push, pull, fetch, or merge changes.</li>
+                            <li>Resolve merge conflicts easily with built-in tools.</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p><b>Stash, Revert, Reset & Cherry-Pick Commits</b></p>
+                        <ol>
+                            <li>Stash Changes – Save uncommitted changes without committing.</li>
+                            <li>Revert Commits – Undo changes while keeping commit history.</li>
+                            <li>Reset Branch – Move a branch pointer to a specific commit.</li>
+                            <li>Cherry-Pick Commits – Apply specific commits from one branch to another.</li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <h2>12. Draw.io</h2>
+                <p>The Draw.io Integration extension in VS Code allows you to create, edit, and view diagrams directly within the editor. It is useful for designing flowcharts, ER diagrams, UML diagrams, network diagrams, and more.</p>
+                <center><img src="./assets/img19.png" alt="img19"></center>
+                <h3>Key Features:</h3>
+                <ol>
+                    <li><b>Create & Edit Diagrams –</b> Supports flowcharts, UML, ERD, and more.</li>
+                    <li><b>Save as Multiple Formats –</b> Exports as .png, .svg, .xml, or .pdf.</li>
+                    <li><b>Version Control Friendly –</b> Stores diagrams in .drawio or .xml format, making them Git-friendly.</li>
+                    <li><b>No External Software Needed –</b> Works entirely within VS Code.</li>
+                    <li><b>Drag-and-Drop Interface –</b> Easy to use with built-in shapes and connectors.</li>
+                    <li><b>Supports Dark Mode –</b> Adapts to your VS Code theme.</li>
+                </ol>
+                <h3>How to Install Draw.io in VS Code</h3>
+                <ol>
+                    <li>Open VS Code.</li>
+                    <li>Go to the Extensions Marketplace (Ctrl + Shift + X).</li>
+                    <li>Search for "Draw.io Integration".</li>
+                    <li>Click Install.</li>
+                    <li>Open a new file with a .drawio or .drawio.svg extension to start editing.</li>
+                </ol>
+                <h3>How to Use Draw.io in VS Code</h3>
+                <ol>
+                    <li>
+                        <p><b>Create a New Diagram</b></p>
+                        <ul>
+                            <li>Click File > New File and save it with .drawio or .drawio.svg.</li>
+                            <li>Alternatively, right-click in the Explorer panel and select "New File", then name it diagram.drawio.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Editing the Diagram</b></p>
+                        <ul>
+                            <li>Open the .drawio file.</li>
+                            <li>The Draw.io editor will appear within VS Code.</li>
+                            <li>Use the built-in shapes, connectors, and text tools.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Saving & Exporting</b></p>
+                        <ul>
+                            <li>Save the file in .drawio.xml format to maintain editability.</li>
+                            <li>Export as .png, .svg, or .pdf using File > Export As.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <center><img src="./assets/img20.png" alt="img20"></center>
+                <h3>Best Use Cases:</h3>
+                <ul>
+                    <li><b>System Architecture Diagrams –</b> Ideal for network and cloud infrastructure diagrams.</li>
+                    <li><b>UML Diagrams –</b> Useful for class diagrams, sequence diagrams, and state machines.</li>
+                    <li><b>Database ER Diagrams –</b> Helps in designing entity-relationship models for databases.</li>
+                    <li><b>Workflow & Flowcharts –</b> Great for process documentation and algorithm visualization. </li>
+                </ul>
+                <h3>Limitations:</h3>
+                <ul>
+                    <li><b>No Real-Time Collaboration –</b> Unlike online tools like Lucidchart, it lacks live collaboration.</li>
+                    <li><b>Limited Advanced Features –</b> Some advanced Draw.io web version features may not work perfectly in VS Code.</li>
+                </ul>
+            </li>
+            <li>
+                <h2>13. Excel Viewer:</h2>
+                <p>The Excel Viewer extension in VS Code allows you to open and view Excel files (.xls, .xlsx, and .csv) directly within the editor without needing external software like Microsoft Excel.</p>
+                <center><img src="./assets/img21.png" alt="img21"></center>
+                <h3>Key Features:</h3>
+                <ul>
+                    <li><b>View Excel Files –</b> Open .xlsx, .xls, and .csv files in a tabular format.</li>
+                    <li><b>Search & Filter –</b> Easily search for data and apply filters.</li>
+                    <li><b>Sort Columns –</b> Sort columns by ascending or descending order.</li>
+                    <li><b>Supports Large Files –</b> Works well with large datasets without lag.</li>
+                    <li><b>Read-Only Mode –</b> Prevents accidental edits to the file.</li>
+                    <li><b>Lightweight –</b> Faster and consumes fewer system resources than opening Excel in a separate application.</li>
+                </ul>
+                <center><img src="./assets/img22.png" alt="img22"></center>
+                <h3>How to Install Excel Viewer in VS Code</h3>
+                <ol>
+                    <li>Open VS Code.</li>
+                    <li>Go to the Extensions Marketplace (Ctrl + Shift + X).</li>
+                    <li>Search for Excel Viewer.</li>
+                    <li>Click Install.</li>
+                    <li>Open an Excel file (.xls, .xlsx, or .csv), and it will automatically display in a table format.</li>
+                </ol>
+                <h3>Usage</h3>
+                <ul>
+                    <li>Open a .csv or .xlsx file in VS Code.</li>
+                    <li>The extension will display the data in a tabular format.</li>
+                    <li>Use the search bar to find specific values.</li>
+                    <li>Click on column headers to sort data.</li>
+                    <li>Right-click for additional options.</li>
+                </ul>
+                <h3>Limitations:</h3>
+                <ul>
+                    <li><b>No Editing –</b> The extension is read-only; you cannot modify the Excel file directly.</li>
+                    <li><b>No Advanced Excel Features –</b> It does not support formulas, pivot tables, or macros.</li>
+                    <li><b>Basic UI –</b> Lacks advanced styling options compared to Excel.</li>
+                </ul>
+                <h3>Best Use Cases</h3>
+                <ul>
+                    <li>Quickly preview Excel files without opening a separate app.</li>
+                    <li>Checking .csv files before importing them into a database.</li>
+                    <li>Viewing large Excel datasets efficiently.</li>
+                </ul>
+            </li>
+            <li>
+                <h2>14. readme-preview</h2>
+                <center><img src="./assets/img23.png" alt="img23"></center>
+                <h3>Key Features:</h3>
+                <ol>
+                    <li><b>Live Markdown Preview –</b> View real-time changes while editing .md files.</li>
+                    <li><b>Supports GitHub Flavored Markdown (GFM) –</b> Works with GitHub README formatting.</li>
+                    <li><b>Embedded Image & Link Support –</b> Displays images and links correctly.</li>
+                    <li><b>Split View & Side-by-Side Mode –</b> Edit Markdown on the left and preview on the right.</li>
+                    <li><b>Supports Tables, Lists, and Code Blocks –</b> Renders all Markdown elements properly.</li>
+                </ol>
+                <h3>How to Install Readme Preview in VS Code</h3>
+                <ol>
+                    <li>Open VS Code.</li>
+                    <li>Go to Extensions Marketplace (Ctrl + Shift + X).</li>
+                    <li>Search for "Readme Preview".</li>
+                    <li>Click Install.</li>
+                    <li>Restart VS Code (if necessary).</li>
+                </ol>
+                <h3>How to Use Readme Preview</h3>
+                <p><b>Method 1: Open the Built-in Markdown Preview</b></p>
+                <p>VS Code has a built-in preview for Markdown files.</p>
+                <ul>
+                    <li>Open a .md file (e.g., README.md).</li>
+                    <li>Press Ctrl + Shift + V to open the preview.</li>
+                    <li>Alternatively, click "Open Preview" in the top-right corner of the editor.</li>
+                </ul>
+                <p><b>Method 2: Side-by-Side Preview</b></p>
+                <ul>
+                    <li>Open a .md file.</li>
+                    <li>Press Ctrl + K V to open the preview side-by-side with the editor.</li>
+                </ul>
+            </li>
+            <li>
+                <h2>15. Prettier</h2>
+                <p>Prettier is a code formatter that helps maintain consistent code styling by automatically formatting your code in VS Code.</p>
+                <center><img src="./assets/img24.png" alt="img24"></center>
+                <h3>Key Features of Prettier</h3>
+                <ol>
+                    <li><b>Auto-formatting –</b> Formats code on save or manually.</li>
+                    <li><b>Supports Multiple Languages –</b> Works with JavaScript, TypeScript, HTML, CSS, JSON, Markdown, and more.</li>
+                    <li><b>Customizable Rules –</b> Configure settings like indentation, line length, and quotes.</li>
+                    <li><b>Integrates with ESLint –</b> Can work alongside ESLint for linting and formatting.</li>
+                    <li><b>Supports Pre-commit Hooks –</b> Format code automatically before committing to Git.                    </li>
+                </ol>
+                <h3> How to Install Prettier in VS Code</h3>
+                <ol>
+                    <li>Open VS Code.</li>
+                    <li>Go to Extensions Marketplace (Ctrl + Shift + X).</li>
+                    <li>Search for "Prettier - Code formatter".</li>
+                    <li>Click Install.</li>
+                    <li>Restart VS Code (optional).</li>
+                </ol>
+                <h3>How to Use Prettier in VS Code</h3>
+                <ol>
+                    <li>
+                        <p><b>Format a File Manually</b></p>
+                        <ul>
+                            <li>Open a file (e.g., .js, .tsx, .json).</li>
+                            <li>Press Shift + Alt + F (Windows/Linux) or Shift + Option + F (Mac) to format.</li>
+                            <li>Alternatively, right-click and select "Format Document".</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Enable Format on Save (Auto-Formatting)</b></p>
+                        <ul>
+                            <li>Go to VS Code Settings (Ctrl + ,).</li>
+                            <li>Search for "Format on Save".</li>
+                            <li>Enable "Editor: Format On Save".</li>
+                        </ul>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+    </section>
+</body>
+</html>
